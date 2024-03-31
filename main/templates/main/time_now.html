@@ -1,22 +1,21 @@
 {% extends 'main/loyout.html' %}
-
 {% block title %}
-{{ message_view.name }}
+Текущее время
 {% endblock %}
 
 {% block header %}
-    <h1>{{ message_view.name }}</h1>
+    <h1>
+        Текущее время
+    </h1>
 {% endblock %}
 
 {% block content %}
     <div class="news">
-        <p>
-            {{ message_view.description }}
-        </p>
+        {% for el in values %}
+            <li><h4>{{ el }}</h4></li>
+        {% endfor %}
     </div>
     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-        <a href="{% url 'message_delete' message_view.id %}" class="btn btn-danger">Удалить</a>
-        <a href="{% url 'message_update' message_view.id %}" class="btn btn-success">Изменить</a>
         <a href="{% url 'index' %}" class="btn btn-warning">На главную</a>
     </div>
 {% endblock %}

@@ -65,6 +65,10 @@ p, h3{
     color: #181717;
 }
 
+p {
+    margin-top: 2%;
+}
+
 .news {
     width: 60%;
     height: auto;
@@ -84,7 +88,7 @@ p, h3{
 }
 
 form{
-    margin-top: 7%;
+    margin-top: 2%;
 }
 
 .btn-group {
