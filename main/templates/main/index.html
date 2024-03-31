@@ -1,0 +1,26 @@
+{% extends 'main/loyout.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block header %}
+    <h1>Главная страница</h1>
+{% endblock %}
+
+{% block content %}
+    {% if data %}
+        {% for i in data %}
+            <div class="news">
+                <h3>{{ i.name }}</h3>
+                <p>{{ i.description }}</p>
+                <a id="btn" href="{% url 'message_view' i.id %}" class="btn btn-warning">Просмотреть</a>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="news">
+            <h3>Нет новых постов</h3>
+            <a id="btn" href="{% url 'message' %}" class="btn btn-warning">Создать пост</a>
+        </div>
+    {% endif %}
+{% endblock %}

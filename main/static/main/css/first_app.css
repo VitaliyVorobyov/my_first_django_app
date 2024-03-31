@@ -1,0 +1,105 @@
+body {
+    background: #625f5f;
+}
+
+.header {
+    background: #625f5f;
+    padding-left: 20%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+    height: auto;
+    float: right;
+    position: fixed;
+    border-bottom: #96969a 2px solid;
+}
+
+h1 {
+    color: #f8f6f6;
+    text-align: center;
+}
+
+aside {
+    background: #181717;
+    color: #ffffff;
+    float: left;
+    padding-top: 2%;
+    padding-left: 2%;
+    width: 20%;
+    min-height: 100vh;
+    border-right: #96969a 2px solid;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+.content {
+    margin-top: 8%;
+    padding-bottom: 1%;
+    background: #625f5f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width: 80%;
+}
+
+.active {
+    position: fixed;
+}
+
+footer {
+    background: #625f5f;
+    color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 1%;
+    width: 80%;
+    float: right;
+    border-top: #96969a 2px solid;
+}
+
+p, h3{
+    text-align: center;
+    color: #181717;
+}
+
+.news {
+    width: 60%;
+    height: auto;
+    background: #f8f6f6;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+#btn_add {
+    width: 100%;
+}
+
+#btn {
+    width: 30%;
+    margin-left: 35%;
+}
+
+form{
+    margin-top: 7%;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    width: 40%;
+}
+
+#main {
+    margin-top: 3%;
+}
+
+.btn-group .btn-warning, .btn-group .btn-success,.btn-group .btn-danger {
+    width: 30%;
+}
